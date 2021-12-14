@@ -27,10 +27,13 @@ public static int trapAttack;
 public static int trapCount;
 
 public static void main (String[] args) {
-createMap();
-spawnTrap();
-spawnPlayer();
+createMap() {
+}
+spawnTrap() {
+}
+spawnPlayer() {
 }
 
 public static int randomValue(int min, int max) {
-return min + random.nextInt
+return min + random.nextInt(Bound:max - min + 1); }
+public static boolean isPlayerAlive() {return playerHP > 0; }
