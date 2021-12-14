@@ -1,0 +1,5 @@
+public class MyFirstApplication {
+//Map
+public static char[][] map;
+public static int mapWight
+public static int mapHeight
