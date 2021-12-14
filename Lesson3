@@ -1,7 +1,6 @@
 Задание 1
 
-public class {
-    
+public class {    
     public static void main(String[] args) {
         int[] arr1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0}; // Array for task 1
                 System.out.println("Task 1: ");
@@ -21,7 +20,7 @@ public class {
     
     Задание 2
     
-    public static void doTask2(int size) {
+    public static void T2(int size) {
         int[] arr = new int[size];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
@@ -63,7 +62,7 @@ public class {
     
        Задание 5
        
-          public static void doTask5(int len, int initialValue){
+          public static void T5(int len, int initialValue){
             int[] arr = new int[len];
             for (int i = 0; i < len; i++) {
                 arr[i] = initialValue;
