@@ -7,6 +7,30 @@ public static char empty
 
 //Player
 public static char player = '@';
+public static string name = 'Boris';
+public static int playerHP = 100;
+public static int playerStr = 15;
+public static int playerX;
+public static int playerY;
+public static int playerExp;
+public static int playerMoveUp = 8;
+public static int playerMoveLeft = 4;
+public static int playerMoveRight = 6;
+public static int playerMoveDown = 2;
+
 
 //Trap
 public static char player = 'T';
+public static int trapX;
+public static int trapY;
+public static int trapAttack;
+public static int trapCount;
+
+public static void main (String[] args) {
+createMap();
+spawnTrap();
+spawnPlayer();
+}
+
+public static int randomValue(int min, int max) {
+return min + random.nextInt
