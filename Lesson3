@@ -1,6 +1,14 @@
 Задание 1
 
 public class {
+    
+    public static void main(String[] args) {
+        int[] arr1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0}; // Array for task 1
+                System.out.println("Task 1: ");
+        doTask1(arr1); // Task 1 check       
+      
+    }
+    
     static int[] replaceArrayValues(int[] array) {
         int arrayLength = array.length;
 
@@ -8,7 +16,8 @@ public class {
             array[i] = (array[i] > 0) ? 0 : 1;
         }
         return array;
-    }
+        }
+   
     
     Задание 2
     
@@ -23,40 +32,32 @@ public class {
     
     Задание 3
     
-    static int[] multiplyLess6(int[] array) {
-        int length = array.length;
-        int tmp;
-
-        for (int i = 0; i < length; i++) {
-            tmp = array[i];
-            array[i] = tmp < 6 ? tmp * 2 : tmp;
+    public static void T3(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 6) {
+                arr[i] = arr[i] * 2;
+            }
+            System.out.print(arr[i] + " ");
         }
-        return array;
     }
 
 
     Задание 4
     
-    static int[][] fillDiagonalArray(int[][] array) {
-        int length = array.length;
-        int firstItem;
-        int lastItem;
-        int firstArray;
-        int lastArray;
-
-        for (int i = 0; i < length; i++) {
-            firstItem = i;
-            lastItem = length - i - 1;
-
-            firstArray = array[i][firstItem];
-            lastArray = array[i][lastItem];
-
-            if (firstArray != 1 && lastArray != 1) {
-                array[i][firstItem] = 1;
-                array[i][lastItem] = 1;
+     public static void T4() {
+        int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}};
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i == j) {
+                    arr[i][j] = 1;
+                }
+                System.out.print(arr[i][j] + " ");
             }
+            System.out.println();
         }
-        return array;
     }
     
     
