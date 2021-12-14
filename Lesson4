@@ -1,5 +1,12 @@
 public class MyFirstApplication {
 //Map
 public static char[][] map;
-public static int mapWight
-public static int mapHeight
+public static int mapWight;
+public static int mapHeight;
+public static char empty
+
+//Player
+public static char player = '@';
+
+//Trap
+public static char player = 'T';
