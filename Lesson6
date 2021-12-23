@@ -17,29 +17,29 @@ class Animal {
 
 class Cat extends Animal {
  
-   protected boolean sweem;
+   protected boolean swim;
  
-    public Cat(String name, int run, boolean sweem, int jump) {
+    public Cat(String name, int run, boolean swim) {
         this.name = name;
         this.run = run;
-        this.sweem = sweem;
+        this.sweem = swim;
         }
 
     public void catInfo() {
-        System.out.println("CatName: " + name + " /RunLimit: " + run+ " meters/" + " /Sweem:" + sweem + ");
+        System.out.println("CatName: " + name + " /RunLimit: " + run+ " meters/" + " /Swim:" + swim + ");
     }
 }
  
 class Dog extends Animal {
-    public int sweam
+    public int swim
  
         public Dog(String name, int run, int sweem,) {
             this.name = name;
             this.run = run;
-            this.sweem = sweem;
+            this.sweem = swim;
         }
         public void dogInfo() {
-            System.out.println("DogName: " + name  + " /RunLimit: " + run+ " meters/" + " /Sweem:" + sweem + ");
+            System.out.println("DogName: " + name  + " /RunLimit: " + run+ " meters/" + " /Swim:" + swim + ");
         }
     }
  
@@ -52,7 +52,7 @@ public class Main {
         cat.animalInfo();
         cat.catInfo();
  
-        Animal danimal = new Animal("Dogs");
+        Animal animal = new Animal("Dogs");
         Dog dog = new Dog("Nessy", 500, 10);
         danimal.animalInfo();
         dog.animalInfo();
