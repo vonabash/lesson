@@ -1,3 +1,4 @@
+public class Lesson6 {
 class Animal {
         public String name;
     public int run;
@@ -13,6 +14,7 @@ class Animal {
         System.out.println();
  
     }
+  }
 }
 
 class Cat extends Animal {
@@ -33,7 +35,7 @@ class Cat extends Animal {
 class Dog extends Animal {
     public int swim
  
-        public Dog(String name, int run, int sweem,) {
+        public Dog(String name, int run, int swim,) {
             this.name = name;
             this.run = run;
             this.sweem = swim;
